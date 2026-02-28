@@ -1,5 +1,5 @@
 import { axiosClient } from "@/lib/api/axiosClient";
-import type { Complaint, DashboardAnalytics, User, UserRole } from "@/types";
+import type { Complaint, ComplaintStatus, DashboardAnalytics, User, UserRole } from "@/types";
 
 const normalizeUser = (user: any): User => ({
   id: user.id,
@@ -13,6 +13,8 @@ const normalizeComplaint = (item: any): Complaint => ({
   title: item.title,
   description: item.description,
   status: item.status,
+  staffId: item.staffId ?? item.assignedTo?.id,
+  assignedTo: item.assignedTo ? normalizeUser(item.assignedTo) : undefined,
   category: item.category
     ? {
         id: item.category.id,
@@ -85,6 +87,24 @@ export const adminService = {
       const { data } = await axiosClient.get("/admin/complaints");
       const list = Array.isArray(data) ? data : Array.isArray(data?.data) ? data.data : [];
       return list.map(normalizeComplaint);
+    } catch (error) {
+      handleError(error);
+    }
+  },
+
+  async assignComplaintToStaff(complaintId: string, staffId: string) {
+    try {
+      const { data } = await axiosClient.post("/admin/complaints/assign", { complaintId, staffId });
+      return normalizeComplaint(data?.data ?? data);
+    } catch (error) {
+      handleError(error);
+    }
+  },
+
+  async updateComplaintStatus(complaintId: string, status: ComplaintStatus) {
+    try {
+      const { data } = await axiosClient.post("/admin/complaints/status", { complaintId, status });
+      return normalizeComplaint(data?.data ?? data);
     } catch (error) {
       handleError(error);
     }
