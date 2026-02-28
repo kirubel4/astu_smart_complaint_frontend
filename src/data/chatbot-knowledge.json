@@ -1,0 +1,40 @@
+{
+  "greetings": [
+    "Hello! How can I help you today?",
+    "Hi! Need help with complaints, categories or your account?"
+  ],
+  "fallback": [
+    "I'm not sure I understand. Could you try asking in another way?",
+    "I don't have an answer for that yet, but I'm learning!"
+  ],
+  "topics": {
+    "create_complaint": {
+      "keywords": ["create complaint", "new complaint", "submit complaint", "file complaint", "add complaint"],
+      "response": "To create a complaint, go to the **Complaints** page and click **New Complaint**. Then fill in the title, description and category and submit."
+    },
+    "check_status": {
+      "keywords": ["check status", "status of complaint", "my complaint status"],
+      "response": "To check your complaint status, open your dashboard. You will see statuses like **Pending**, **In Progress**, or **Resolved**."
+    },
+    "categories": {
+      "keywords": ["categories", "complaint categories", "list categories"],
+      "response": "Categories help classify complaint types. Admins can create categories from the Admin Dashboard under **Manage Categories**."
+    },
+    "admin_users": {
+      "keywords": ["manage users", "admin users", "user list"],
+      "response": "Admins can manage users in the Admin Panel → **Users**. You can view, search, and update user roles."
+    },
+    "login": {
+      "keywords": ["login", "sign in", "access account"],
+      "response": "To login, use your email and password on the Login page. Your role determines the dashboard you see."
+    },
+    "signup": {
+      "keywords": ["signup", "register", "create account"],
+      "response": "To create an account, fill in your name, email, password, and role on the Sign Up page."
+    },
+    "complaint_flow": {
+      "keywords": ["how system works", "complaint flow", "how complaints work"],
+      "response": "The complaint process is simple: User submits → Admin reviews → Status updated → User receives updates."
+    }
+  }
+}

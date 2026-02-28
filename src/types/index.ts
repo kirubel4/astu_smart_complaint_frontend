@@ -25,6 +25,8 @@ export interface Complaint {
   title: string;
   description: string;
   status: ComplaintStatus;
+  staffId?: string;
+  assignedTo?: User;
   category?: Category;
   createdAt: string;
   updatedAt?: string;
