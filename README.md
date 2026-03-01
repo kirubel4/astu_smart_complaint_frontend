@@ -22,7 +22,6 @@ This frontend application is built using Next.js and provides the user-facing in
 4. **View Categories**
    Users can see all categories created by administrators. Categories help users understand how their complaint will be handled.
 
----
 
 ### Administrator Features
 
@@ -35,7 +34,7 @@ This frontend application is built using Next.js and provides the user-facing in
 3. **Manage Users**
    Admins can view registered users, modify roles, activate or deactivate accounts, and search through the user list.
 
----
+
 
 ## Technology and Structure
 
@@ -49,22 +48,15 @@ The frontend uses Next.js, React server components, client components, dynamic A
 - Fetch API or Axios for backend communication
 - Session or token-based authentication workflows
 - Form handling and validation using a custom validator or libraries such as React Hook Form
-
----
+  
 
 ## Backend Integration
 
 All frontend requests are routed to the backend API defined in `NEXT_PUBLIC_API_URL`. This includes authentication, category management, user management, and complaint operations. Each request uses secure token handling and follows consistent API conventions.
 
----
-
-## Testing
-
-Recommended tools include Jest, React Testing Library, and Playwright for UI automation. Tests should cover all pages, forms, components, and API service layers.
-
----
 
 ## Deployment
 
 The application can be deployed on Vercel. Environment variables must be configured on the deployment platform.
+
 
