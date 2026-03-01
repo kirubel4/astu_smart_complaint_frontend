@@ -18,14 +18,14 @@ export const useNotificationStore = create<NotificationState>((set, get) => ({
     const notifications = await notificationService.getAll();
     set({
       notifications,
-      unreadCount: notifications.filter((n) => !n.read).length,
+      unreadCount: notifications.filter((n: Notification) => !n.read).length,
     });
   },
   markReadLocal: (id: string) => {
-    const updated = get().notifications.map((n) => (n.id === id ? { ...n, read: true } : n));
+    const updated = get().notifications.map((n: Notification) => (n.id === id ? { ...n, read: true } : n));
     set({
       notifications: updated,
-      unreadCount: updated.filter((n) => !n.read).length,
+      unreadCount: updated.filter((n: Notification) => !n.read).length,
     });
   },
 }));
