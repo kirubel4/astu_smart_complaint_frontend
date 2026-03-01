@@ -1,40 +1,40 @@
 {
   "greetings": [
-    "Hello! How can I help you today?",
-    "Hi! Need help with complaints, categories or your account?"
+    "Hello. I am here to support you with anything related to complaints, categories, system navigation, account access, or general guidance within the platform. Feel free to ask any question, provide keywords, or describe an issue in your own words. I will do my best to give you the most detailed and thorough explanation possible.",
+    "Hi. If you require assistance regarding complaint creation, complaint status tracking, complaint categories, user account access, administrative tools, or anything connected to the structure and behavior of the system, please let me know. I can provide step by step explanations, clarify processes, and give long informative guidance."
   ],
   "fallback": [
-    "I'm not sure I understand. Could you try asking in another way?",
-    "I don't have an answer for that yet, but I'm learning!"
+    "I was not able to fully understand what you meant. It may help if you express your question using different words, add more details, or tell me what you are trying to achieve. Once I understand the intent, I will provide a clear and comprehensive explanation.",
+    "At the moment, I do not have a direct answer for that specific input. However, if you restate it with more context or describe the action you want to perform, I can generate a complete and deeply detailed response to guide you through it."
   ],
   "topics": {
     "create_complaint": {
-      "keywords": ["create complaint", "new complaint", "submit complaint", "file complaint", "add complaint"],
-      "response": "To create a complaint, go to the **Complaints** page and click **New Complaint**. Then fill in the title, description and category and submit."
+      "keywords": ["create complaint", "new complaint", "submit complaint", "file complaint", "add complaint", "complaint", "write complaint"],
+      "response": "To create a new complaint within the system, navigate to the section labeled Complaints inside the application interface. Once you access the Complaints page, you will find an action button or link that clearly indicates New Complaint. Selecting this option will open a structured form. This form is designed to capture every essential detail required for proper handling. The fields typically include a title, which should summarize the core issue in a few words, and a detailed description, where you can elaborate thoroughly on the situation, circumstances, and any relevant background information. You will also be asked to choose a category that best matches the nature of your complaint. Categories help route your submission to the appropriate administrative group. After completing all fields, check for accuracy, then submit the complaint. The system will store it, mark it as pending, and make it accessible for administrators to review."
     },
     "check_status": {
-      "keywords": ["check status", "status of complaint", "my complaint status"],
-      "response": "To check your complaint status, open your dashboard. You will see statuses like **Pending**, **In Progress**, or **Resolved**."
+      "keywords": ["check status", "status of complaint", "my complaint status", "view status", "track complaint"],
+      "response": "To check the current status of any complaint you have submitted, access your personal dashboard. The dashboard displays an overview of all complaints you have filed, each presented with a clear status indicator. These statuses include Pending, which means the complaint is newly created and awaiting administrative review. In Progress indicates that an administrator is actively working on evaluating or resolving the issue. Resolved signifies that the administrator has completed the necessary actions and marked the complaint as closed. Additionally, some systems may include statuses such as Rejected, if the complaint does not meet certain criteria, or Requires More Information, if the administrator needs clarification or additional details. By selecting any complaint in your list, you may also open a more detailed view that shows timestamps, updates, and administrator notes."
     },
     "categories": {
-      "keywords": ["categories", "complaint categories", "list categories"],
-      "response": "Categories help classify complaint types. Admins can create categories from the Admin Dashboard under **Manage Categories**."
+      "keywords": ["categories", "complaint categories", "list categories", "types of complaints", "category information"],
+      "response": "Complaint categories serve as an essential classification mechanism that helps group, organize, and manage different types of issues. They allow the platform to ensure that each complaint is routed to the correct administrative department or responsible role. Categories can vary depending on the system configuration, but common examples include technical issues, service problems, account-related inquiries, feature requests, misconduct reports, and more. Administrators have full control over creating new categories, editing existing ones, or removing outdated classifications. This is done through the Admin Dashboard under the section titled Manage Categories. By maintaining a clear and logical category structure, the system can operate efficiently, reduce confusion, and provide faster response times for users submitting complaints."
     },
     "admin_users": {
-      "keywords": ["manage users", "admin users", "user list"],
-      "response": "Admins can manage users in the Admin Panel → **Users**. You can view, search, and update user roles."
+      "keywords": ["manage users", "admin users", "user list", "user management", "admin panel users"],
+      "response": "Administrators can manage users by accessing the Admin Panel and navigating to the Users section. This area contains a comprehensive list of all registered users, including their names, emails, roles, and account statuses. From this section, administrators can search for specific users, sort users by different criteria, update roles to promote or restrict access, activate or deactivate accounts, and correct information when necessary. User management plays a critical role in maintaining the security and integrity of the system. Properly configured user roles ensure that only authorized individuals can perform certain actions, such as viewing sensitive data, modifying categories, or responding to complaints. This section also allows administrators to perform audits and monitor user behavior for administration and compliance."
     },
     "login": {
-      "keywords": ["login", "sign in", "access account"],
-      "response": "To login, use your email and password on the Login page. Your role determines the dashboard you see."
+      "keywords": ["login", "sign in", "access account", "enter account", "log into system"],
+      "response": "To log in to your account, navigate to the Login page within the application. You will be asked to provide your registered email and password. After submitting these credentials, the authentication system verifies your identity. If the credentials match, you are granted access to your dashboard. The type of dashboard you see depends on your assigned role. Standard users generally see the complaint submission and tracking interface, while administrators see an expanded interface containing administrative tools, user management options, and category controls. If you encounter issues logging in, such as forgotten passwords or incorrect credentials, you can use the password recovery option or request assistance from system support."
     },
     "signup": {
-      "keywords": ["signup", "register", "create account"],
-      "response": "To create an account, fill in your name, email, password, and role on the Sign Up page."
+      "keywords": ["signup", "register", "create account", "open account", "new account"],
+      "response": "To create a new account, open the Sign Up page. The registration form will request information such as your full name, email address, password, and role selection if user roles are user-selectable. Ensure that the email you provide is valid, as it may be used for verification or recovery procedures. Your password should meet the system's security requirements to ensure proper account protection. After submitting the registration form, the system may verify your details, create a new profile for you, and then allow you to proceed to login. Depending on the platform settings, an administrator may need to approve new accounts before they become active."
     },
     "complaint_flow": {
-      "keywords": ["how system works", "complaint flow", "how complaints work"],
-      "response": "The complaint process is simple: User submits → Admin reviews → Status updated → User receives updates."
+      "keywords": ["how system works", "complaint flow", "how complaints work", "explain flow", "flow of complaints"],
+      "response": "The complaint flow represents the full life cycle of how a complaint moves through the system from creation to closure. It begins when a user submits a complaint using the New Complaint form. The complaint is then stored and marked as Pending. Administrators regularly review pending complaints and evaluate the details provided. Once an administrator begins working on the issue, the status changes to In Progress. During this stage, administrators may contact the user for additional details, take necessary actions to resolve the problem, update system records, or collaborate with other administrative members. After the issue is addressed, the administrator marks the complaint as Resolved. The user can then review the resolution details and consider the matter closed. This structured process ensures transparency, accountability, and efficient handling of all complaints."
     }
   }
 }
