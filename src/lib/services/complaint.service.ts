@@ -56,7 +56,7 @@ export const complaintService = {
       return mapComplaint(data?.data ?? data);
     }
     const complaints = await this.getStudentComplaints();
-    const complaint = complaints.find((item) => item.id === id);
+    const complaint = complaints.find((item: Complaint) => item.id === id);
     if (!complaint) throw new Error("Complaint not found");
     return complaint;
   },
