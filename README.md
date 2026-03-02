@@ -4,7 +4,6 @@
 
 This frontend application is built using Next.js and provides the user-facing interface for a complete complaint management system. It includes user registration, user login, complaint creation, complaint tracking, category browsing, and administrative interfaces for managing categories, users, and submitted complaints. The frontend is designed to communicate with a backend API, render dynamic pages, and deliver a smooth and structured experience without requiring page reloads. Every page, component, utility, and service is structured to support clarity, maintainability, and long-term scalability.
 
----
 
 ## Features
 
@@ -58,5 +57,6 @@ All frontend requests are routed to the backend API defined in `NEXT_PUBLIC_API_
 ## Deployment
 
 The application can be deployed on Vercel. Environment variables must be configured on the deployment platform.
+
 
 
